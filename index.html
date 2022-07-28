@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
 
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <header>
     <h1>Speaker Submission</h1>
     <p><em>Want to speak at our fake conference? Fill out
-      this form.</em></p>
+        this form.</em></p>
   </header>
 
   <form action="" method="get">
@@ -23,8 +25,7 @@
 
     <div class="form-row">
       <label for="email">Email</label>
-      <input type="email" name="email" id="email"
-      placeholder="joe@example.com">
+      <input type="email" name="email" id="email" placeholder="joe@example.com">
     </div>
 
     <fieldset class="legacy-form-row">
@@ -32,7 +33,7 @@
 
       <input type="radio" name="talkType" id="talkType1" value="main-stage">
       <label for="talkType1" class="radio-label">Main Stage</label>
-      
+
       <input type="radio" name="talkType" id="talkType2" value="workshop" checked>
       <label for="talkType2" class="radio-label">Workshop</label>
     </fieldset>
@@ -46,8 +47,26 @@
         <option value='l'>Large</option>
       </select>
     </div>
+
+    <div class="form-row">
+      <label for="abstract">Abstract</label>
+      <textarea name="abstract" id="abstract"></textarea>
+      <div class="instruction">Describe your talk in 500 words</div>
+    </div>
+
+    <div class="form-row">
+      <label for="available" class="checkbox-label">
+        <input type="checkbox" id="available" name="available" value="is-available">
+        <span>I’m actually available the date of the talk</span>
+      </label>
+    </div>
+
+    <div class="form-row">
+      <button>Submit</button>
+    </div>
   </form>
 
   <script src="./main.js"></script>
 </body>
+
 </html>
